@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #ddd;
+                }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+    </style>
+</head>
+<body>
+    <style>
+        body {
+            
+            background-color: #004DA8;
+        }
+
+        h2 {
+            text-align: center;
+background-color: MintCream;
+        }
+    </style>
+
+
+    <h2> Acuvate Embedded Power BI  </h2>
+    <p style="color:white;"> Hover the mouse on the button to check the reports.</p>
+
+    <div class="dropdown">
+        <button class="dropbtn">Reports</button>
+        <div class="dropdown-content">
+	    <a href="https://app.powerbi.com/view?r=eyJrIjoiOTM0YTQwZmYtMTg4ZS00Y2IxLTliYTAtNTI0OGE3YWQ0ODIyIiwidCI6IjU3NGMzZTU2LTQ5MjQtNDAwNC1hZDFhLWQ4NDI3ZTdkYjI0MSIsImMiOjZ9" target="action"> Report 1</a>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiOTA1NmI0ZGItOWI2Zi00N2FlLWE5M2YtYmQyOWY0YjgwZWQ5IiwidCI6IjU3NGMzZTU2LTQ5MjQtNDAwNC1hZDFhLWQ4NDI3ZTdkYjI0MSIsImMiOjZ9" target="action"> Report 2</a>
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiZWU5ZDNhZDItMjk5Mi00OWMyLThlMGEtNWQ1MTUxNWE3Y2FiIiwidCI6IjU3NGMzZTU2LTQ5MjQtNDAwNC1hZDFhLWQ4NDI3ZTdkYjI0MSIsImMiOjZ9" target="action"> Report 3</a>
+            
+        </div>
+    </div>
+    <table>
+        <tr>
+            <td width="1000" height="100" rowspan="10">
+<div class="container"> 
+<iframe  name="action" class="responsive-iframe"  frameborder="0" allowFullScreen="false"></iframe>
+</div>
+</td>
+        </tr>
+    </table>
+
+</body>
+</html>
